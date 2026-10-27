@@ -1,0 +1,17 @@
+.header {
+    padding: 15px 0 0;
+
+    &__container {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 80px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+    }
+}

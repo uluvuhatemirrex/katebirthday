@@ -1,0 +1,76 @@
+.hero {
+    padding: 100px 0 0;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 35px;
+    }
+
+    &__text-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: relative;
+        width: 540px;
+    }
+
+    &__date {
+        font-family: $ff-main;
+        font-size: 16px;
+        line-height: 25px;
+        letter-spacing: 0.20em;
+        text-transform: uppercase;
+        color: $color-dust;
+        margin-bottom: 7px;
+    }
+
+    &__head {
+        font-family: $ff-secondary;
+        font-size: 60px;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin: 0 0 35px;
+        padding: 0;
+        color: $color-leather;
+    }
+
+    &__street {
+        position: absolute;
+        top: 30px;
+        right: 150px;
+    }
+
+    &__cito {
+        font-family: $ff-main;
+        font-size: 16px;
+        line-height: 25px;
+        letter-spacing: 0.20em;
+        text-transform: uppercase;
+        color: $color-dust-50;
+        margin-bottom: 7px;
+    }
+
+    &__text {
+        font-family: $ff-main;
+        font-size: 16px;
+        line-height: 25px;
+        margin: 0;
+        text-align: right;
+
+        &:not(:last-child) {
+            margin: 0 0 30px;
+        }
+    }
+    &__water-mask {
+        position: relative;
+    }
+    
+    &__mask-img {
+        position: absolute;
+        top: -75px;
+        right: 10px;
+        z-index: 1;
+    }
+}
