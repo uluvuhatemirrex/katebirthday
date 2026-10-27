@@ -493,4 +493,39 @@ textarea {
   top: -75px;
   right: 10px;
   z-index: 1;
+}
+
+.history {
+  padding: 210px 0 0;
+}
+.history__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 105px;
+}
+.history__text-wrap {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  position: relative;
+  width: 640px;
+}
+.history__date {
+  font-family: "montserrat", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #787878;
+  margin-bottom: 7px;
+}
+.history__head {
+  font-family: "cormorant", "Arial", sans-serif;
+  font-size: 60px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0 0 35px;
+  padding: 0;
+  color: #C3937C;
 }/*# sourceMappingURL=style.css.map */
