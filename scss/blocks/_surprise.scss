@@ -1,0 +1,82 @@
+.surprise {
+    padding: 160px 0 180px;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    &__text-wrap {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        position: relative;
+        width: 640px;
+    }
+
+    &__date {
+        font-family: $ff-main;
+        font-size: 16px;
+        line-height: 25px;
+        letter-spacing: 0.20em;
+        text-transform: uppercase;
+        color: $color-dust;
+        margin-bottom: 7px;
+    }
+
+    &__head {
+        font-family: $ff-secondary;
+        font-size: 60px;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin: 0 0 45px;
+        padding: 0;
+        color: $color-leather;
+    }
+
+    &__name {
+        position: absolute;
+        top: -20px;
+        left: 60px;
+    }
+
+    &__cito {
+        font-family: $ff-main;
+        font-size: 16px;
+        line-height: 25px;
+        letter-spacing: 0.20em;
+        text-transform: uppercase;
+        color: $color-dust-50;
+        margin-bottom: 7px;
+    }
+
+    &__img-wrap {
+        position: relative;
+    }
+
+    &__image {
+        border-radius: 0 0 260px 0;
+    }
+
+    &__smallimg-first {
+        position: absolute;
+        bottom: -100px;
+        left: 40px;
+        box-shadow: 0px 0px 29px 23px rgba(34, 60, 80, 0.3);
+    }
+
+    &__branches {
+        position: absolute;
+        top: -75px;
+        left: -220px;
+    }
+
+    &__lavry {
+        position: absolute;
+        z-index: -1;
+        top: 345px;
+        left: 40%;
+    }
+}

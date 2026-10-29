@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/png" sizes="96x96" rel="icon" href="images/favicon/favicon-heart.png">
     <link rel="stylesheet" href="css/style.css">
-    <title>Happy Birthday!</title>
+    <title>С днем рождения, любимая!</title>
 </head>
 
 <body>
@@ -18,8 +19,7 @@
                 <nav class="navbar">
                     <ul class="navbar-list">
                         <li class="navbar-list__item"><a href="#history" class="navbar-list__link">История</a></li>
-                        <li class="navbar-list__item"><a href="#congratulation"
-                                class="navbar-list__link">Поздравляшки</a></li>
+                        <li class="navbar-list__item"><a href="#surprise" class="navbar-list__link">Поздравляшки</a></li>
                         <li class="navbar-list__item"><a href="#gallery" class="navbar-list__link">Галерея</a></li>
                     </ul>
                 </nav>
@@ -32,13 +32,13 @@
                 <div class="hero__wrapper">
                     <div class="hero__text-wrap">
                         <span class="hero__date">февраль 2024</span>
-                        <h2 class="hero__head">Колпино</h2>
+                        <h1 class="hero__head">Колпино</h1>
                         <svg class="hero__street" width="266" height="65" aria-hidden="true">
                             <use xlink:href="images/sprite.svg#icon-str"></use>
                         </svg>
                         <span class="hero__cito">Это была не случайность...</span>
                         <p class="hero__text">Зима. Холод.&nbsp;Солнце скрывалось за&nbsp;хмурыми тучами. Водитель автобуса впускает вновь прибывших из&nbsp;метро людей. В&nbsp;тот&nbsp;день казалось, что это&nbsp;самый обычный день, ничем не&nbsp;отличающийся от&nbsp;других.</p>
-                        <p class="hero__text">Но&nbsp;по&nbsp;прибытию, все изменилось... экскурсия по&nbsp;району, весёлые покатушки на&nbsp;автобусах, преследование школьника с&nbsp;галстуком, обзор крестов... и... просто прогулка, которая стала ключом от&nbsp;вселенной...</p>
+                        <p class="hero__text">Но&nbsp;по&nbsp;прибытию, все изменилось... экскурсия по&nbsp;району, весёлые покатушки на&nbsp;автобусах, преследование школьника с&nbsp;галстуком, обзор крестов... и... просто прогулка, которая стала ключом от&nbsp;большой истории любви...</p>
                     </div>
                     <div class="hero__img-wrap">
                         <div class="hero__water-mask">
@@ -47,27 +47,100 @@
                         </div>
                     </div>
                 </div>
+                <a class="hero__scroll" href="#history" aria-label="Перейти к истории">
+                    <span class="hero__scroll-icon-wrap">
+                        <svg class="hero__scroll-icon hero__scroll-icon--closed" width="16" height="18" viewBox="0 0 16 18" fill="none" aria-hidden="true">
+                            <rect x="1.5" y="8" width="13" height="9" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M4.5 8V4.5a3.5 3.5 0 0 1 7 0V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="8" cy="12.2" r="1.2" fill="currentColor"/>
+                        </svg>
+                        <svg class="hero__scroll-icon hero__scroll-icon--open" width="16" height="18" viewBox="0 0 16 18" fill="none" aria-hidden="true">
+                            <rect x="1.5" y="8" width="13" height="9" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M4.5 8V4.5a3.5 3.5 0 0 1 6.67-1.48" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="8" cy="12.2" r="1.2" fill="currentColor"/>
+                        </svg>
+                    </span>
+                </a>
             </div>
         </section>
-        <section class="history">
+        <section class="history" id="history">
             <div class="container">
                 <div class="history__wrapper">
                     <div class="history__img-wrap">
-                        <img class="history__image" src="images/history/history-img1.jpg" srcset="images/history/history-img1@2x.jpg 2x" alt="Изображение любящей пары">
+                        <img class="history__image" src="images/history/history-img1.jpg" srcset="images/history/history-img1@2x.jpg 2x" alt="Изображение любящей пары" width="860" height="601">
+                        <img class="history__smallimg-first" src="images/history/histrory-img2.jpg" srcset="images/history/history-img2@2x.jpg 2x" alt="моя катюнька" width="190" height="280">
+                        <img class="history__smallimg-second" src="images/history/history-img3.jpg" srcset="images/history/history-img3@2x.jpg 2x" alt="я" width="190" height="280">
+                        <svg class="history__branches" width="652" height="380" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#icon-branches"></use>
+                        </svg>
+                        <svg class="history__lavry" width="390" height="528" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#icon-lavry"></use>
+                        </svg>
                     </div>
                     <div class="history__text-wrap">
-                        <span class="history__date">июнь 2024</span>
+                        <span class="history__date">июнь&nbsp;2024</span>
                         <h2 class="history__head">Маленькое начало</h2>
                         <h2 class="history__head">Большой любви</h2>
                         <span class="history__cito">Когда просто хочется быть вместе</span>
                         <p class="history__text">От&nbsp;долгих переписок, и&nbsp;казалось бы&nbsp;обычных прогулок по&nbsp;парку, до&nbsp;объятий и&nbsp;первого поцелуя, разделял переломный момент, когда голова была кругом, а&nbsp;в&nbsp;животе летали бабочки.</p>
-                        <p class="history__text">Я&nbsp;осознал что я&nbsp;встретил своего человека, которого понимаю, икоторый понимает меня. Что это&nbsp;тот&nbsp;человек, которого я&nbsp;всегдаискал, и&nbsp;наконец нашел. Что это&nbsp;не&nbsp;просто очередная мальчишевская привязанность, а&nbsp;настоящая любовь с&nbsp;первого взгляда.</p>
+                        <p class="history__text">Я&nbsp;осознал что я&nbsp;встретил своего человека, которого понимаю, и который понимает меня. Что это&nbsp;тот&nbsp;человек, которого я&nbsp;всегда искал, и&nbsp;наконец нашел. Что это&nbsp;не&nbsp;просто очередная мальчишевская привязанность, а&nbsp;настоящая любовь с&nbsp;первого взгляда.</p>
                         <p class="history__text">Я&nbsp;думаю что любовь не&nbsp;многословна. Много слов и&nbsp;не&nbsp;нужно, чтобы понять почему. Просто потому что это&nbsp;комбо из&nbsp;красоты и&nbsp;душевности.</p>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="strong">
+            <div class="container">
+                <div class="strong__wrapper">
+                    <div class="strong__text-wrap">
+                        <span class="strong__date">январь&nbsp;&mdash; август&nbsp;2025</span>
+                        <h2 class="strong__head">Мы&nbsp;сильная</h2>
+                        <h2 class="strong__head">Команда</h2>
+                        <p class="strong__text">Всего через год от&nbsp;знакомства мы&nbsp;впервые обсуждаем совместную поездку на&nbsp;отдых за&nbsp;границу, и&nbsp;это&nbsp;впечатляет. Я&nbsp;не&nbsp;знаю ни одной пары, которая в&nbsp;нашем возрасте бы&nbsp;могла позволить себе подобный отдых, так еще и&nbsp;только вдвоем. И&nbsp;мы&nbsp;сделали это. Просто поставили цель и&nbsp;выполнили её. И&nbsp;тут я&nbsp;горжусь нами, потому что это&nbsp;очень мощно. И&nbsp;на&nbsp;этом мы&nbsp;не&nbsp;остановимся!</p>
+                        <p class="strong__text">А&nbsp;еще я&nbsp;очень горжусь тобой. Ты&nbsp;самая целеустремленная девочка. Я&nbsp;горжусь тем что ты&nbsp;сама выбрала свой путь, и&nbsp;не&nbsp;абы какой, а&nbsp;который действительно нравится. Ты&nbsp;большая молодец. Учись, стремись, дерзай! Я&nbsp;всегда рядом и&nbsp;во&nbsp;всем буду готов помочь.</p>
+                    </div>
+                    <div class="strong__img-wrap">
+                        <img class="strong__image" src="images/strong/strong-img1.jpg" srcset="images/strong/strong-img1@2x.jpg 2x" alt="Изображение любящей пары" width="860" height="601">
+                        <img class="strong__smallimg-first" src="images/strong/strong-img2.jpg" srcset="images/strong/strong-img2@2x.jpg 2x" alt="моя катюнька" width="190" height="280">
+                        <img class="strong__smallimg-second" src="images/strong/strong-img3.jpg" srcset="images/strong/strong-img3@2x.jpg 2x" alt="еще моя катюнька" width="190" height="280">
+                        <svg class="strong__branches" width="652" height="380" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#icon-branches"></use>
+                        </svg>
+                        <svg class="strong__lavry" width="195" height="264" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#icon-lavry"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="surprise" id="surprise">
+            <div class="container">
+                <div class="surprise__wrapper">
+                    <div class="surprise__img-wrap">
+                        <img class="surprise__image" src="images/surprise/surprise-img1.jpg" srcset="images/surprise/surprise-img1@2x.jpg 2x" alt="моя катюнька" width="860" height="601">
+                        <img class="surprise__smallimg-first" src="images/surprise/surprice-img2.jpg" srcset="images/surprise/surprice-img2@2x.jpg 2x" alt="моя катюнька два" width="267" height="351">
+                        <svg class="surprise__branches" width="652" height="380" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#icon-branches"></use>
+                        </svg>
+                        <svg class="surprise__lavry" width="390" height="528" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#icon-lavry"></use>
+                        </svg>
+                    </div>
+                    <div class="surprise__text-wrap">
+                        <h2 class="surprise__head">А еще</h2>
+                        <svg class="surprise__name" width="490" height="102" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#icon-name"></use>
+                        </svg>
+                        <p class="surprise__text">Я&nbsp;поздравляю тебя с&nbsp;твоим юбилеем. Тебе исполнилось целых 20&nbsp;лет. Мы&nbsp;встретились с&nbsp;тобой практически 3&nbsp;года назад, и&nbsp;это&nbsp;были самые лучшие 3&nbsp;года, которые могли со мной случиться.</p>
+                        <p class="surprise__text">Катя. Ты&nbsp;сногшибательная красотка. Очень умная и&nbsp;мотивированная. Мне&nbsp;даже кажется, что если ты&nbsp;очень сильно захочешь&nbsp;&mdash; то&nbsp;сможешь реально голыми руками любые горы свернуть. И&nbsp;я&nbsp;считаю, что это&nbsp;главное.</p>
+                        <p class="surprise__text">А&nbsp;пока молодая, не&nbsp;торопись и&nbsp;живи в&nbsp;свое удовольствие. Мы&nbsp;с&nbsp;тобой еще очень много всего успеем в&nbsp;этой жизни, и&nbsp;сейчас, просто потихоньку будем готовится к&nbsp;ней.</p>
+                        <p class="surprise__text">Я&nbsp;желаю тебе, чтобы у&nbsp;тебя все всегда получалось. Чтобы ты&nbsp;никогда не&nbsp;расстраивалась и&nbsp;не&nbsp;опускала руки. Совсем немного терпения. И&nbsp;оставаться всегда такой же красивой и&nbsp;любимой девчонкой!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

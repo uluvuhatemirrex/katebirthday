@@ -1,0 +1,85 @@
+.strong {
+    padding: 210px 0 0;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    &__text-wrap {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        position: relative;
+        width: 640px;
+    }
+
+    &__date {
+        font-family: $ff-main;
+        font-size: 16px;
+        line-height: 25px;
+        letter-spacing: 0.20em;
+        text-transform: uppercase;
+        color: $color-dust;
+        margin-bottom: 7px;
+    }
+
+    &__head {
+        font-family: $ff-secondary;
+        font-size: 60px;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin: 0 0 35px;
+        padding: 0;
+        color: $color-leather;
+    }
+
+    &__cito {
+        font-family: $ff-main;
+        font-size: 16px;
+        line-height: 25px;
+        letter-spacing: 0.20em;
+        text-transform: uppercase;
+        color: $color-dust-50;
+        margin-bottom: 7px;
+    }
+
+    &__img-wrap {
+        position: relative;
+    }
+
+    &__image {
+        border-radius: 0 0 0 260px;
+    }
+
+    &__smallimg-first {
+        position: absolute;
+        top: -90px;
+        left: 30px;
+        box-shadow: 0px 0px 29px 23px rgba(34, 60, 80, 0.3);
+    }
+
+    &__smallimg-second {
+        position: absolute;
+        top: 460px;
+        right:40px;
+        box-shadow: 0px 0px 29px 23px rgba(34, 60, 80, 0.3);
+    }
+
+    &__branches {
+        position: absolute;
+        top: -84px;
+        left: 420px;
+        transform: rotate(90deg);
+    }
+
+    &__lavry {
+        position: absolute;
+        z-index: -1;
+        top: 400px;
+        left: 0;
+        transform: scaleX(-1);
+    }
+}

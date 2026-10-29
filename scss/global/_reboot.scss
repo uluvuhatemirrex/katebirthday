@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+html.page-locked {
+  overflow: hidden;
+}
+
+
 body {
   display: flex;
   flex-direction: column;
@@ -37,4 +46,9 @@ a {
 
 textarea {
   resize: none;
+}
+
+p {
+  font-family: $ff-main;
+  color: $color-anthracite;
 }
