@@ -1,0 +1,93 @@
+.footer {
+    position: relative;
+
+    &__content {
+        position: relative;
+        z-index: 1;
+        padding: 88px 0 84px;
+        background-color: $color-almond;
+    }
+
+    &__inner {
+        max-width: 1726px;
+        margin: 0 auto;
+        padding: 0 140px;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    &__text-wrap {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    &__phrase {
+        font-family: $ff-secondary;
+        font-size: 40px;
+        font-weight: 300;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: $color-leather;
+        margin: 0;
+    }
+
+    &__bottom {
+        display: flex;
+        column-gap: 290px;
+        margin-top: 60px;
+    }
+
+    &__note {
+        font-family: $ff-main;
+        font-size: 11px;
+        line-height: 16px;
+        letter-spacing: 0.04em;
+        color: $color-dust-50;
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        margin-right: 17%;
+        padding-top: 6px;
+    }
+
+    &__nav-title {
+        font-family: $ff-main;
+        font-size: 11px;
+        line-height: 16px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: $color-dust;
+        margin-bottom: 16px;
+    }
+
+    &__nav-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__nav-link {
+        font-family: $ff-main;
+        font-size: 12px;
+        line-height: 18px;
+        color: $color-dust-50;
+        transition: color $transition-300;
+
+        &:hover,
+        &:focus-visible {
+            color: $color-leather;
+        }
+    }
+}

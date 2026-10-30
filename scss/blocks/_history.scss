@@ -16,6 +16,10 @@
         width: 640px;
     }
 
+    &__text {
+        margin: 0 0 10px;
+    }
+
     &__date {
         font-family: $ff-main;
         font-size: 16px;
@@ -31,8 +35,8 @@
         font-size: 60px;
         font-weight: 300;
         text-transform: uppercase;
-        margin: 0 0 35px;
         padding: 0;
+        margin: 0 0 30px;
         color: $color-leather;
     }
 

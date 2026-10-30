@@ -31,7 +31,7 @@
         font-size: 60px;
         font-weight: 300;
         text-transform: uppercase;
-        margin: 0 0 45px;
+        margin: 0 0 65px;
         padding: 0;
         color: $color-leather;
     }
@@ -40,17 +40,14 @@
         position: absolute;
         top: -20px;
         left: 60px;
+        max-width: calc(100% - 60px);
+        height: auto;
     }
 
-    &__cito {
-        font-family: $ff-main;
-        font-size: 16px;
-        line-height: 25px;
-        letter-spacing: 0.20em;
-        text-transform: uppercase;
-        color: $color-dust-50;
-        margin-bottom: 7px;
+    &__text {
+        margin: 0 0 10px;
     }
+
 
     &__img-wrap {
         position: relative;
