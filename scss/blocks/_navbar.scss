@@ -10,6 +10,13 @@
         gap: 20px;
         width: 100%;
 
+        @include vp-767 {
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 14px 18px;
+            width: auto;
+        }
+
         &__link {
             font-size: 16px;
             line-height: 14px;
@@ -18,6 +25,15 @@
 
             &:hover {
                 color: $color-almond;
+            }
+
+            @include vp-1023 {
+                font-size: 14px;
+            }
+
+            @include vp-767 {
+                font-size: 13px;
+                line-height: 18px;
             }
         }
     }

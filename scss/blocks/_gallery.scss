@@ -3,6 +3,10 @@
     overflow: hidden;
     padding: 120px 0 180px;
 
+    @include vp-1023 {
+        padding: 70px 0 100px;
+    }
+
     &__bg {
         position: absolute;
         top: 0;
@@ -12,6 +16,12 @@
         background-color: rgba($color-almond, 0.7);
         border-radius: 0 0 260px 0;
         pointer-events: none;
+
+        @include vp-1023 {
+            width: 100%;
+            border-radius: 0;
+            opacity: 0.4;
+        }
     }
 
     .container {
@@ -44,6 +54,14 @@
         margin: 0;
         padding: 0;
         color: $color-leather;
+
+        @include vp-1023 {
+            font-size: 40px;
+        }
+
+        @include vp-767 {
+            font-size: 32px;
+        }
     }
 
     &__ornament {
@@ -54,6 +72,15 @@
         height: 300px;
         margin-left: 140px;
         pointer-events: none;
+
+        @include vp-1023 {
+            margin-left: 0;
+            left: auto;
+            top: -20px;
+            width: 200px;
+            height: 200px;
+            opacity: 0.5;
+        }
     }
 
     &__ornament-circle,
@@ -67,18 +94,31 @@
         top: 0;
         left: 0;
         width: 300px;
+
+        @include vp-1023 {
+            width: 200px;
+        }
     }
 
     &__ornament-dots {
         top: -20px;
         left: 60px;
         width: 190px;
+
+        @include vp-1023 {
+            width: 130px;
+            left: 40px;
+        }
     }
 
     &__ornament-dots--bottom {
         top: 500px;
         left: -560px;
         width: 240px;
+
+        @include vp-1023 {
+            display: none;
+        }
     }
 
     &__slider {
@@ -97,6 +137,16 @@
         transform: scale(0.88);
         transition: transform 0.5s ease;
 
+        @include vp-1023 {
+            width: 90vw;
+            height: auto;
+            aspect-ratio: 640 / 480;
+        }
+
+        @include vp-767 {
+            width: 92vw;
+        }
+
         &.swiper-slide-active {
             transform: scale(1);
         }
@@ -113,6 +163,11 @@
         justify-content: flex-end;
         gap: 16px;
         margin-top: 48px;
+
+        @include vp-1023 {
+            justify-content: center;
+            margin-top: 32px;
+        }
     }
 
     &__button {
@@ -135,6 +190,11 @@
             background-color: $color-leather;
             border-color: $color-leather;
         }
+
+        @include vp-1023 {
+            width: 48px;
+            height: 48px;
+        }
     }
 
     &__branches {
@@ -148,6 +208,13 @@
             height: auto;
             transform: rotate(-160deg);
             opacity: 0.7;
+
+            @include vp-1023 {
+                width: 120px;
+                top: 50px;
+                right: 16px;
+                opacity: 0.4;
+            }
         }
 
         &--bottom {
@@ -157,6 +224,13 @@
             height: auto;
             transform: scaleX(-1) rotate(20deg);
             opacity: 0.5;
+
+            @include vp-1023 {
+                width: 100px;
+                bottom: 80px;
+                left: 16px;
+                opacity: 0.3;
+            }
         }
     }
 }

@@ -1,15 +1,23 @@
 .strong {
     position: relative;
-    /* Ветка уходит за правый край — обрезаем только по горизонтали,
-       вертикальный декор должен остаться видимым */
     overflow-x: clip;
     padding: 210px 0 0;
+
+    @include vp-1023 {
+        padding: 90px 0 0;
+    }
 
     &__wrapper {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
         gap: 40px;
+
+        @include vp-1023 {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
     }
 
     &__text-wrap {
@@ -18,6 +26,14 @@
         text-align: right;
         position: relative;
         width: 640px;
+
+        @include vp-1023 {
+            order: 2;
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+            align-items: center;
+        }
     }
 
     &__date {
@@ -28,34 +44,67 @@
         text-transform: uppercase;
         color: $color-dust;
         margin-bottom: 7px;
+
+        @include vp-1023 {
+            font-size: 14px;
+        }
     }
 
     &__head {
         font-family: $ff-secondary;
         font-size: 60px;
+        line-height: 45px;
         font-weight: 300;
         text-transform: uppercase;
         margin: 0 0 35px;
         padding: 0;
         color: $color-leather;
+
+        &:not(:last-of-type) {
+            margin-bottom: 6px;
+        }
+
+        @include vp-1023 {
+            font-size: 40px;
+            margin-bottom: 20px;
+
+            &:not(:last-of-type) {
+                margin-bottom: 4px;
+            }
+        }
+
+        @include vp-767 {
+            font-size: 32px;
+        }
     }
 
-    &__cito {
-        font-family: $ff-main;
-        font-size: 16px;
-        line-height: 25px;
-        letter-spacing: 0.20em;
-        text-transform: uppercase;
-        color: $color-dust-50;
-        margin-bottom: 7px;
+    &__text {
+        margin: 0 0 10px;
+
+        @include vp-1023 {
+            font-size: 12px;
+            line-height: 16px;
+        }
     }
 
     &__img-wrap {
         position: relative;
+
+        @include vp-1023 {
+            order: 1;
+            width: 100%;
+            max-width: 600px;
+        }
     }
 
     &__image {
         border-radius: 0 0 0 260px;
+
+        @include vp-1023 {
+            width: 100%;
+            height: auto;
+            border-radius: 0 0 0 180px;
+        }
     }
 
     &__smallimg-first {
@@ -63,6 +112,17 @@
         top: -90px;
         left: 30px;
         box-shadow: 0px 0px 29px 23px rgba(34, 60, 80, 0.3);
+
+        @include vp-1023 {
+            width: 150px;
+            height: auto;
+            top: -30px;
+            left: 10px;
+        }
+
+        @include vp-767 {
+            width: 90px;
+        }
     }
 
     &__smallimg-second {
@@ -70,6 +130,18 @@
         top: 460px;
         right:40px;
         box-shadow: 0px 0px 29px 23px rgba(34, 60, 80, 0.3);
+
+        @include vp-1023 {
+            width: 150px;
+            height: auto;
+            top: auto;
+            bottom: 10px;
+            right: -10px;
+        }
+
+        @include vp-767 {
+            width: 90px;
+        }
     }
 
     &__branches {
@@ -77,6 +149,18 @@
         top: -84px;
         left: 420px;
         transform: rotate(90deg);
+
+        @include vp-1023 {
+            width: 400px;
+            height: auto;
+            top: -70px;
+            left: auto;
+            right: -60px;
+        }
+
+        @include vp-767 {
+            display: none;
+        }
     }
 
     &__lavry {
@@ -85,5 +169,20 @@
         top: 400px;
         left: 0;
         transform: scaleX(-1);
+
+        @include vp-1023 {
+            width: 150px;
+            height: auto;
+            top: auto;
+            bottom: -120px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        @include vp-767 {
+            transform: rotate(200deg);
+            width: 150px;
+            top: -90px;
+        }
     }
 }

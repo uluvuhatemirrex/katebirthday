@@ -1,11 +1,21 @@
 .surprise {
     padding: 160px 0 180px;
 
+    @include vp-1023 {
+        padding: 90px 0 30px;
+    }
+
     &__wrapper {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
         gap: 40px;
+
+        @include vp-1023 {
+            flex-direction: column;
+            align-items: center;
+            gap: 70px;
+        }
     }
 
     &__text-wrap {
@@ -14,6 +24,14 @@
         text-align: left;
         position: relative;
         width: 640px;
+
+        @include vp-1023 {
+            order: 2;
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+            align-items: center;
+        }
     }
 
     &__date {
@@ -34,6 +52,16 @@
         margin: 0 0 65px;
         padding: 0;
         color: $color-leather;
+
+        @include vp-1023 {
+            font-size: 40px;
+            margin-bottom: 40px;
+        }
+
+        @include vp-767 {
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
     }
 
     &__name {
@@ -42,19 +70,42 @@
         left: 60px;
         max-width: calc(100% - 60px);
         height: auto;
+
+        @include vp-767 {
+            width: 240px;
+            top: 0;
+            left: 45px;
+        }
     }
 
     &__text {
         margin: 0 0 10px;
+
+        @include vp-1023 {
+            font-size: 12px;
+            line-height: 16px;
+        }
     }
 
 
     &__img-wrap {
         position: relative;
+
+        @include vp-1023 {
+            order: 1;
+            width: 100%;
+            max-width: 600px;
+        }
     }
 
     &__image {
         border-radius: 0 0 260px 0;
+
+        @include vp-1023 {
+            width: 100%;
+            height: auto;
+            border-radius: 0 0 180px 0;
+        }
     }
 
     &__smallimg-first {
@@ -62,12 +113,34 @@
         bottom: -100px;
         left: 40px;
         box-shadow: 0px 0px 29px 23px rgba(34, 60, 80, 0.3);
+
+        @include vp-1023 {
+            width: 180px;
+            height: auto;
+            bottom: -40px;
+            left: 2%;
+        }
+
+        @include vp-767 {
+            width: 120px;
+        }
     }
 
     &__branches {
         position: absolute;
         top: -75px;
         left: -220px;
+
+        @include vp-1023 {
+            width: 400px;
+            height: auto;
+            top: -60px;
+            left: -60px;
+        }
+
+        @include vp-767 {
+            display: none;
+        }
     }
 
     &__lavry {
@@ -75,5 +148,19 @@
         z-index: -1;
         top: 345px;
         left: 40%;
+
+        @include vp-1023 {
+            width: 260px;
+            height: auto;
+            top: auto;
+            bottom: -160px;
+            left: 60%;
+            transform: translateX(-50%);
+        }
+
+        @include vp-767 {
+            width: 200px;
+            bottom: -120px;
+        }
     }
 }

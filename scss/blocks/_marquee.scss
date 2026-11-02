@@ -1,7 +1,7 @@
 .marquee {
     width: 100%;
     overflow: hidden;
-    padding: 0 0 40px;
+    padding: 0 0 20px;
 
     &__inner {
         display: flex;
@@ -21,6 +21,16 @@
         color: $color-leather;
         white-space: nowrap;
         padding: 0 32px;
+
+        @include vp-1023 {
+            font-size: 32px;
+            padding: 0 24px;
+        }
+
+        @include vp-767 {
+            font-size: 26px;
+            padding: 0 18px;
+        }
     }
 }
 
