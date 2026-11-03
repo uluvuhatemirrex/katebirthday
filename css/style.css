@@ -315,7 +315,7 @@ template {
 
 @font-face {
   font-family: "Montserrat";
-  src: url("../../fonts/montserrat-regular.woff2") format("woff2"), url("../../fonts/montserrat-regular.woff") format("woff");
+  src: url("../fonts/montserrat-regular.woff2") format("woff2"), url("../fonts/montserrat-regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -349,7 +349,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-family: "montserrat", "Arial", sans-serif;
-  background-image: url(../../images/bg-color.png), url(../../images/bg-color-2.png);
+  background-image: url(../images/bg-color.png), url(../images/bg-color-2.png);
   background-position: center, center;
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
