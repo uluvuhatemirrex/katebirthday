@@ -677,12 +677,6 @@ p {
     height: auto;
   }
 }
-.hero__branches {
-  display: block;
-  padding: 130px 0;
-  width: 100%;
-  height: auto;
-}
 .hero__scroll {
   display: flex;
   align-items: center;
@@ -865,6 +859,7 @@ p {
 @media (max-width: 1023px) {
   .history__date {
     font-size: 14px;
+    margin-bottom: 0;
   }
 }
 .history__head {
@@ -883,15 +878,16 @@ p {
 @media (max-width: 1023px) {
   .history__head {
     font-size: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
   .history__head:not(:last-of-type) {
-    margin-bottom: 4px;
+    margin-bottom: 0;
   }
 }
 @media (max-width: 767px) {
   .history__head {
     font-size: 32px;
+    line-height: 32px;
     margin-bottom: 15px;
   }
 }
@@ -1065,6 +1061,7 @@ p {
 @media (max-width: 1023px) {
   .strong__date {
     font-size: 14px;
+    margin-bottom: 0;
   }
 }
 .strong__head {
@@ -1086,12 +1083,13 @@ p {
     margin-bottom: 20px;
   }
   .strong__head:not(:last-of-type) {
-    margin-bottom: 4px;
+    margin-bottom: 0;
   }
 }
 @media (max-width: 767px) {
   .strong__head {
     font-size: 32px;
+    line-height: 32px;
   }
 }
 .strong__text {
@@ -1243,15 +1241,6 @@ p {
     text-align: center;
     align-items: center;
   }
-}
-.surprise__date {
-  font-family: "montserrat", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 25px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: #787878;
-  margin-bottom: 7px;
 }
 .surprise__head {
   font-family: "cormorant", "Arial", sans-serif;
@@ -1616,6 +1605,27 @@ p {
   width: fit-content;
   animation: marquee-rotate 200s linear infinite;
   will-change: transform;
+}
+.marquee__phrase {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+.marquee__phrase-text {
+  white-space: nowrap;
+}
+.marquee__phrase-lang {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: none;
+  opacity: 0.7;
+  white-space: nowrap;
+}
+@media (max-width: 767px) {
+  .marquee__phrase-lang {
+    font-size: 10px;
+  }
 }
 .marquee__text {
   flex-shrink: 0;
